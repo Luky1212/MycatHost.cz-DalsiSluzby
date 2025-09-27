@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Další Služby - MycatHost</title>
+    <style>
+        .top-right-logo {
+    position: fixed;   /* logo se „připíchne“ na obrazovku */
+    top: 10px;         /* vzdálenost od horního okraje */
+    right: 10px;       /* vzdálenost od pravého okraje */
+    z-index: 1000;     /* aby nebylo překryté ostatními prvky */
+}
+
+.top-right-logo img {
+    width: 32px;  /* velikost loga */
+    height: 32px;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #007BFF;
+            padding: 20px;
+            text-align: left;
+        }
+        .header h1 {
+            color: white;
+            display: inline;
+            font-size: 28px;
+        }
+        .header h1 span {
+            color: red;
+        }
+        .nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            color: white;
+            display: inline-block;
+        }
+        .basic { background-color: #0056b3; }
+        .beefy { background-color: #C9A710; }
+        .ultimate { background-color: purple; }
+        .about { background-color: black; color: white; }
+        .dalsi { background-color: #676767; color: white; }
+
+        .block {
+            width: 90%;
+            margin: 15px auto;
+            padding: 20px;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+        }
+        .block:nth-child(odd) { background-color: #333; }
+        .block:nth-child(even) { background-color: #007BFF; }
+
+        .features {
+            background-color: #e6e6e6;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 5px;
+            text-align: left;
+            width: 90%;
+            color: black;
+            font-size: 18px;
+        }
+        .features h2 {
+            margin-top: 0;
+            color: black;
+        }
+        .checkmark { color: lime; }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: auto;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVNÍ úpravy pro mobily */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 22px;
+            }
+            .nav {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .nav a {
+                font-size: 16px;
+                padding: 10px;
+                width: 90%;
+            }
+            .block, .features {
+                font-size: 16px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+<div class="top-right-logo">
+    <img src="favicon-32x32.png" alt="Logo">
+</div>
+        <h1><a href="https://mycathost.cz" style="color: white; text-decoration: none;">Mycat<span>Host</span></a></h1>
+    </div>
+
+    <div class="nav">
+        <a href="https://luky1212.github.io/MycatHost.cz-Basic/" class="basic">Basic</a>
+        <a href="https://luky1212.github.io/MycatHost.cz-Beefy/" class="beefy">Beefy</a>
+        <a href="https://luky1212.github.io/MycatHost.cz-Ultimate/" class="ultimate">Ultimate</a>
+        <a href="https://luky1212.github.io/MycatHost.cz-AboutUs/" class="about">About Us</a>
+        <a href="https://luky1212.github.io/MycatHost.cz-DalsiSluzby/" class="dalsi">Další Služby</a>
+    </div>
+    
+    <div class="block about">
+        <h2>Další Služby</h2>
+        <p>Stejně jako u Minecraft hostingu i na další služby klademe důraz na kvalitu a vaši spokojenust</p>
+    </div>
+
+    <div class="features">
+        <h2></h2>
+        <p> href="https://luky1212.github.io/MycatHost.cz-AboutUs/" class="about">About Us</p>
+        <a href="https://luky1212.github.io/MycatHost.cz-AboutUs/" class="about">About Us</a>
+        <p>Nabízíme Kvalitní, rychlý, bezpečný Minecraft hosting pro širokou škálu méně i více náročných hráčů.</p>
+        <p>Naše přednost je co největší spolehlivost  dostupnost, a férovost.</p>
+    </div>
+
+    <div class="footer">Mycathost.cz 2025</div>
+
+</body>
+</html>
